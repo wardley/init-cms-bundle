@@ -326,7 +326,7 @@ abstract class MediaAdmin extends Admin
 
         $id = $this->getRequest()->get('id');
 
-        $menu->setCurrentUri($this->request->getRequestUri());
+        $menu->setUri($this->request->getRequestUri());
 
         $menu->addChild(
             $this->trans('sidemenu.link_edit_media'),

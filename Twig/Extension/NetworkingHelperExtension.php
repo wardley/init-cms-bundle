@@ -262,7 +262,7 @@ class NetworkingHelperExtension extends \Twig_Extension implements ContainerAwar
 
             $menu = $admin->getMenuFactory()->createItem('root');
             $request = $this->getService('request');
-            $menu->setCurrentUri($request->getRequestUri());
+            $menu->setUri($request->getRequestUri());
             $menu->setChildrenAttribute('class', 'ul-second-level');
 
             foreach ($admin->getSubNavLinks() as $label => $link) {
